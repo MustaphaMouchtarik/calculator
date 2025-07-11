@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: azure;">
+    <div class="container">
+        <div class="calculator">
+            <div id="display">
+            <input type="text" id="bar" name="result">
+            </div>
+            <div>
+            <input class="butt" type="button" value="1" onclick="bar.value+='1'">
+            <input class="butt" type="button" value="2" onclick="bar.value+='2'">
+            <input class="butt" type="button" value="3" onclick="bar.value+='3'">
+            <input class="butt" id="esc" type="button" value="ESC" onclick="bar.value=''">
+            </div>        
+            <div>
+            <input class="butt" type="button" value="4" onclick="bar.value+='4'">
+            <input class="butt" type="button" value="5" onclick="bar.value+='5'">
+            <input class="butt" type="button" value="6" onclick="bar.value+='6'">
+            <input class="butt" type="button" value="+" onclick="bar.value+='+'">
+            </div>
+            <div>
+            <input class="butt" type="button" value="7" onclick="bar.value+='7'">
+            <input class="butt" type="button" value="8" onclick="bar.value+='8'">
+            <input class="butt" type="button" value="9" onclick="bar.value+='9'">
+            <input class="butt" type="button" value="-" onclick="bar.value+='-'">
+            </div>
+            <div>
+            <input class="butt" type="button" value="." onclick="bar.value+='.'">
+            <input class="butt" type="button" value="0" onclick="bar.value+='0'">
+            <input class="butt" type="button" value="=" onclick="bar.value =eval(bar.value)">
+            <input class="butt" type="button" value="*" onclick="bar.value+='*'">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
